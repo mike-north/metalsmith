@@ -17,7 +17,7 @@ var fixture = path.resolve.bind(path, __dirname, 'fixtures')
  *    - https://nodejs.org/api/buffer.html#buffer_class_method_buffer_from_string_encoding
  */
 function getBuffer(arg) {
-  if (Buffer.hasOwnProperty('from')){
+  if (Object.prototype.hasOwnProperty.call(Buffer, 'from')){
     return Buffer.from(arg)
   }
   return new Buffer(arg)
