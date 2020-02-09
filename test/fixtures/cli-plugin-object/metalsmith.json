@@ -1,5 +1,5 @@
 {
   "plugins": {
-    "metalsmith-drafts": {}
+    "@mike-north/metalsmith-drafts": {}
   }
 }
